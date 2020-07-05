@@ -1,0 +1,12 @@
+{
+  "name": "Design_Pattern",
+  "version": "1.0.0",
+  "description": "디자인 패턴은 되풀이 되는 문제에 대한 재사용 가능한 솔루션 이다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
