@@ -1,4 +1,4 @@
-// 종속성을 하드코드
+// 종속성 하드 코딩 (db)
 const db = require("./db");
 
 const users = db.sublevel("users");
