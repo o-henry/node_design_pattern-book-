@@ -13,3 +13,15 @@ exports.checkToken = (req, res, next) => {
  * authController 모듈은 authService 모듈에 종속되며 authServcie 모듈은 db 모듈에 의존한다.
  * 특정 DB 인스턴스에 간접적으로 연결되는 이행성(transitivity)을 갖는다.
  */
+
+/* ======================================= refactoring DI ========================================= */
+
+module.exports = (authService) => {
+  const authController = {};
+
+  authController.login = (req, res, next) => {};
+
+  authController.checkToken = (req, res, next) => {};
+
+  return authController;
+};

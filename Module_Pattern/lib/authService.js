@@ -3,6 +3,10 @@ const db = require("./db");
 
 const users = db.sublevel("users");
 
+const jwt = require("jwt-sample");
+
+const bcrypt = require("bcrypt");
+
 const tokenSecret = "SHHH!";
 
 exports.login = (username, password, callback) => {
@@ -16,3 +20,15 @@ exports.checkToken = (token, callback) => {
 /**
  * 위 코드는 특정 db 인스턴스 에 대한 종속성을 하드코딩 했기 때문에, 코드를 건드리지 않고서는 authService를 다른 DB 인스턴스와 재사용 할 수 없다.
  */
+
+/* ======================================= refactoring DI ========================================= */
+module.exports = (db, tokenSecret) => {
+  const users = db.sublevel("users");
+  const authService = [];
+
+  authService.login = (username, password, callback) => {};
+
+  authService.checkToken = (token, callback) => {};
+
+  return authService;
+};
