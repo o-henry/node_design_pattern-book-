@@ -1,4 +1,4 @@
-# NODE 디자인 패턴 책 내용 정리
+# NODE 디자인 패턴
 
 ## Module Pattern
 
