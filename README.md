@@ -52,7 +52,6 @@
   
   **상위 수준 모듈은 하위 수준 모듈에 의존해서는 안되며 이둘은 추상화에 의존해야 한다**
 
-[타입스크립트와 SOLID](https://medium.com/humanscape-tech/solid-%EB%B2%95%EC%B9%99-%E4%B8%AD-lid-fb9b89e383ef)
 
 ## DRY
 
